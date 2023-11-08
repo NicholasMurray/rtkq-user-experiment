@@ -12,7 +12,7 @@ export const userApi = createApi({
       query: (ID) => `&results=${10}`,
     }),
     getUserByID: builder.query({
-      query: (ID) => `&results=${ID}`,
+      query: (userId) => `&results=${userId}`,
     }),
   }),
 });
