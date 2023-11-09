@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useGetUserByIDQuery } from "../../services/user";
 
 export const UserPage = () => {
@@ -21,6 +20,7 @@ export const UserPage = () => {
           </h4>
         </div>
       ) : null}
+      <Link to={`/`}>Back to users</Link>
     </div>
   );
 };
