@@ -18,7 +18,7 @@ export const UsersPage = () => {
               <li className="list-item" key={`list-item-${index}`}>
                 <h4>
                   {user.name.first} {user.name.last} -{" "}
-                  <Link to={`/users/${index + 1}`}>edit</Link>
+                  <Link to={`/users/${index + 1}`}>edit (with state)</Link>
                 </h4>
               </li>
             ))}
